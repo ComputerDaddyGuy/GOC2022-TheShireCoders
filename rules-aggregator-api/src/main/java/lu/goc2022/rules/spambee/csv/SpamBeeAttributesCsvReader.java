@@ -10,15 +10,20 @@ import org.springframework.stereotype.Component;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import lu.goc2022.rules.spambee.ISpamBeeAttributesLoader;
-import lu.goc2022.rules.spambee.SpamBeeAttributes;
 
 @Component
 public class SpamBeeAttributesCsvReader implements ISpamBeeAttributesLoader {
 
 	@Override
 	public List<SpamBeeAttributes> loadSpamBeeAttributes() {
+		/*
+		 * Real application should load CSV dynamically
+		 */
 		try (FileReader reader = new FileReader("src/main/resources/_Spambee_Attributes__2022-04.csv")) {
 			List<SpamBeeAttributes> beans = new CsvToBeanBuilder<SpamBeeAttributes>(reader) //
+					.withMultilineLimit(99999) //
+//					.withStrictQuotes(true) //
+					.withSeparator(',') //
 					.withType(SpamBeeAttributes.class) //
 					.build() //
 					.parse();

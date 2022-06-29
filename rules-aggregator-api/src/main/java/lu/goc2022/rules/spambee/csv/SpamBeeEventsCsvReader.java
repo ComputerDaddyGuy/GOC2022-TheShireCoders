@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import lu.goc2022.rules.spambee.ISpamBeeEventsLoader;
-import lu.goc2022.rules.spambee.SpamBeeEvents;
 
 @Component
 public class SpamBeeEventsCsvReader implements ISpamBeeEventsLoader {

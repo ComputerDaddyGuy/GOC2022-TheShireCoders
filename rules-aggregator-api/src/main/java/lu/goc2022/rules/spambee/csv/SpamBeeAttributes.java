@@ -1,4 +1,4 @@
-package lu.goc2022.rules.spambee;
+package lu.goc2022.rules.spambee.csv;
 
 import com.opencsv.bean.CsvBindByName;
 
