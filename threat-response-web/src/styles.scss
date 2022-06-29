@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: RobotoDraft,Roboto,"Helvetica Neue, Helvetica, Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.0rem;
+  margin: 0;
+}
+
+p-card {
+  margin: 20px;
+}
+
+.badge {
+  border-radius: 2px;
+  padding: 0.25em 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+  background-color: #9a9a9a;
+  color: #ffffff;
+}
+
+.status-deleted {
+  background-color: #ff465c;
+  color: #ffffff;
+}
+
+.status-blocked {
+  background-color: #f38c54;
+  color: #ffffff;
+}
+
+.status-treated {
+  background-color: #53b068;
+  color: #ffffff;
+}
