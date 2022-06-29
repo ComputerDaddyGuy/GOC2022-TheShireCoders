@@ -1,6 +1,6 @@
 package lu.goc2022.trafficfaker.page;
 
-import jakarta.annotation.PostConstruct;
+//import jakarta.annotation.PostConstruct;
 import lombok.SneakyThrows;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -22,7 +22,7 @@ public abstract class BasePage {
     protected JavascriptExecutor javascriptExecutor;
     //@Autowired
     //protected LogUtil logUtil;
-    @PostConstruct
+    //@PostConstruct
     private void init() {
         PageFactory.initElements(this.driver, this);
     }
