@@ -1,0 +1,922 @@
+{
+	"ipAddresses": [
+		{
+			"value": "209.85.160.42",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		}
+	],
+	"fromEmails": [
+		{
+			"value": "pedidos@riooffsite.com.br",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 2,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "earleenlpwoodman2593@gmail.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "no-reply8@ywsahagmkm.cn",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "aupay@etsybuy.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "tiger@expoly.cn",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "iphone13promaxshopperfeedbacki@ketofittoday.buzz",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "from@eanatri.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "amazone-co-jppo@suanbi.net",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "jevepeyi@gmail.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "noreply-admin@yochiyochi.net",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "fortune@msg.fortune.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "nozuqaxu@gmail.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "amazon-support@c2me1spoe.cn",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "smbc_service@dn.smbc.co.jp",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "quickbooks@notification.intuit.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "no-reply@sharepointonline.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "support@direcsion.me",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "from@plaretpr.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "no-reply@mercari.jp",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "no-reply@livestormevents.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "davewave24@gmail.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "miltongrovesc.yahoo.com@send.mailchimpapp.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "editor@members.wayfair.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		}
+	],
+	"hosts": [
+		{
+			"value": "e.data",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.smbc.co.jp",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "storage.googleapis.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "instagram.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "li.wayfair.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "livestorm.co",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "kwargs.id",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.mesoscri.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "owhlmhkwdstmrng.wix.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.ketofittoday.buzz",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.ztsddw.cn",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "romaratetrainer.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "usaa.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 2,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "amazon.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "aambassaonner-my.sharepoint.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "ehst.sv",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "miltongrovesc.us15.list-manage.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "links.notification.intuit.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "imgbb.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "u.to",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www1.nyc.gov",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "r.style",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "peel.ugdydg.cn",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.wayfair.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "yryda.ml",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "xn--amazon-2o4epknhtgy462a0u5h.co",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "mailchi.mp",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "secure.img.wfrcdn.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "164.155.77.125",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "s.yimg.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "ex.name",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "direct.smbc.co.jp",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "t.wf1.wfrlh.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "live2daysus.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.w3.org",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.pinterest.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "hararmi.tk",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "r.name",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "southcentralusr-notifyp.svc.ms",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "au.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "secure.img1-fg.wfcdn.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "amazon.co.jp",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "jinshuju.net",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "nam12.safelinks.protection.outlook.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "amazon.co.jp.mkzn.shop",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "marioncomga.org",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "qa.smbc.co.jp",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.amazon.co.jp",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 2,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "cuaita1.vip",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "fortune.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "u10225017.ct.sendgrid.net",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 2,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.birchlane.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "auto-kddl.srhgd.icu",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.mercari.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "wayfair.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "sttechnewsuccesspath.com",
+			"score": {
+				"phishingCount": 2,
+				"totalCount": 2,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.facebook.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "twitter.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.allmodern.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "app.livestorm.co",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "x247.de",
+			"score": {
+				"phishingCount": 2,
+				"totalCount": 2,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "links.msg.fortune.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "u2309175.ct.sendgrid.net",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "wayfairapp.onelink.me",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "www.mailchimp.com",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "www.jossandmain.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "secure.img1-ag.wfcdn.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "smbc.co.jp.hgyty.com",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		}
+	],
+	"subjects": [
+		{
+			"value": "Invoice 30148805 from Norton Billing",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "Metamask Withdrawal Alert - 01/04/2022",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "Happy Dietday!",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "Verify mobile number on your profile",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 2,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "I feel like having a spicy day",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "=?utf-8?B?44CQ5LiJ5LqV5L2P5Y+L5Lya56S+44CR44GL44KJ6YeN6KaB44Gq44GK55+l44KJ44Gb?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "=?UTF-8?B?YXXjgYvjgonjga7nt4rmgKXjga7jgZTpgKPntaHjgJDlpZHntITjga7jg4fjg7zjgr/jga7pgJo=?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "#recliners",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "fdrafdsf",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "Confirmation ReceiptID16441131",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "BONUS: $100 IPHONE 13 PRO MAX Gift Card Opportunity",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "=?utf-8?B?44CQ44Oh44Or44Kr44Oq44CR6YeN6KaB44Gq44GK55+l44KJ44GbIFvjg6Hjg7zjg6vjgrPjg7w=?=",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "=?utf-8?B?44CQ44Oh44Or44Kr44Oq44CRMzAwMOWGhuWIhuODneOCpOODs+ODiOW/heOBmuOCguOCiQ==?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "=?utf-8?B?QW1hem9u44OX44Op44Kk44Og5Lya6LK744Gu44GK5pSv5omV44GE5pa55rOV44Gr?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "Welcome to Your Survey-6668",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "I LIVE ALONE&I HAVE NICE B000BS",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "CBD - The Hottest Thing In 2022 - New Year New You - Feel Better Now",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
+			"value": "Private_photo_with_Kaelyn",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "=?utf-8?B?44CQ6YeN6KaB44CRTkVUc3RhdGlvbipBUExVUw==?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "Let's have some spicey fun together!",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "=?utf-8?B?5a6i5qeY44Gu5rOo5paH44GoYW1hem9u44Ki44Kr44Km44Oz44OI44KS5YGc5q2i?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		},
+		{
+			"value": "[ SPAM ]  =?utf-8?B?RnfvvJror6XlpoLkvZXliKnnlKjogqHmnYPmv4DlirHlhoXpg6jmoLjlv4Pp?=",
+			"score": {
+				"phishingCount": 0,
+				"totalCount": 1,
+				"score": 0.0
+			}
+		}
+	]
+}

@@ -1,15 +1,19 @@
 package lu.goc2022;
 
-import lu.goc2022.cli.Analyze;
+import lu.goc2022.cli.command.analyze.AnalyzeCommand;
 import picocli.CommandLine;
 
 public class MailAnalyzerCli {
 
 	public static void main(String[] args) {
 
-		args = new String[] { "src/main/resources/in/8.eml" };
+		args = new String[] { //
+				"--in", "src/main/resources/in", //
+				"--out", "src/main/resources/out", //
+				"--thread", "10" //
+		};
 
-		Analyze analyzeCommand = new Analyze();
+		AnalyzeCommand analyzeCommand = new AnalyzeCommand();
 		new CommandLine(analyzeCommand).execute(args);
 	}
 
