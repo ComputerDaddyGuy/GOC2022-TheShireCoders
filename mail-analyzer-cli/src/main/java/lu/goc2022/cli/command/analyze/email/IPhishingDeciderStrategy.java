@@ -1,9 +1,9 @@
 package lu.goc2022.cli.command.analyze.email;
 
-import org.simplejavamail.api.email.Email;
+import java.io.File;
 
 public interface IPhishingDeciderStrategy {
 
-	public PhishingDecision isPhishing(Email email);
+	public PhishingDecision isPhishing(File emlFile);
 
 }

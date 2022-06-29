@@ -21,6 +21,7 @@ import lu.goc2022.cli.command.analyze.email.AnalysisResult;
 import lu.goc2022.cli.command.analyze.email.IPhishingDeciderStrategy;
 import lu.goc2022.cli.command.analyze.email.ScoringRulesPhishingDecider;
 import lu.goc2022.cli.command.analyze.email.SingleEmailAnalysisTask;
+import lu.goc2022.cli.command.analyze.email.ThreatResponseDatabaseService;
 import lu.goc2022.cli.command.analyze.rules.ScoreDto;
 import lu.goc2022.cli.command.analyze.rules.ScoringRuleDto;
 import lu.goc2022.cli.command.analyze.rules.ScoringRules;
@@ -28,7 +29,7 @@ import lu.goc2022.cli.exceptions.MailAnalyzerException;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
-@Command(name = "analyze")
+@Command(name = "analyze", helpCommand = true)
 @Slf4j
 public class AnalyzeCommand implements Callable<Integer> {
 
@@ -56,11 +57,12 @@ public class AnalyzeCommand implements Callable<Integer> {
 		log.info("Number of thread(s): {}", threadCount);
 
 		log.info("Getting last version of phishing rules...");
-		ScoringRules phishingRules = loadingPhishingRules();
+		ScoringRules phishingRules = loadingPhishingRules("src/main/resources/phishing-rules.json"); // Hard-coded for this Hackathon, but could be provided as CLI option
 
 		log.info("Preparing all analysis tasks...");
-		IPhishingDeciderStrategy phishingDecider = new ScoringRulesPhishingDecider(phishingRules); // This could be dynamic in real application
-		List<SingleEmailAnalysisTask> allAnalysisTasks = prepareAllAnalysisTasks(phishingDecider);
+		IPhishingDeciderStrategy phishingDecider = new ScoringRulesPhishingDecider(phishingRules); // This could be dynamic/provided in in real application
+		ThreatResponseDatabaseService threatResponseDbService = new ThreatResponseDatabaseService();
+		List<SingleEmailAnalysisTask> allAnalysisTasks = prepareAllAnalysisTasks(phishingDecider, threatResponseDbService);
 		log.info("--> {} analysis to perform", allAnalysisTasks.size());
 
 		log.info("Executing all {} analysis tasks on {} thread(s)...", allAnalysisTasks.size(), threadCount);
@@ -100,11 +102,11 @@ public class AnalyzeCommand implements Callable<Integer> {
 		}
 	}
 
-	private ScoringRules loadingPhishingRules() {
+	private ScoringRules loadingPhishingRules(String jsonFileSource) {
 		// DISCLAIMER: This could be a direct HTTP call, but not in the scope of this hackathon
 
 		JSONParser jsonParser = new JSONParser();
-		try (FileReader reader = new FileReader("src/main/resources/phishing-rules.json")) {
+		try (FileReader reader = new FileReader(jsonFileSource)) {
 			Object obj = jsonParser.parse(reader); // Read JSON file
 			return parsePhishingRules((JSONObject) obj); // Iterate over employee array
 		} catch (IOException | ParseException e) {
@@ -160,7 +162,7 @@ public class AnalyzeCommand implements Callable<Integer> {
 	 * @param phishingRules
 	 * @return
 	 */
-	private List<SingleEmailAnalysisTask> prepareAllAnalysisTasks(IPhishingDeciderStrategy phishingDecider) {
+	private List<SingleEmailAnalysisTask> prepareAllAnalysisTasks(IPhishingDeciderStrategy phishingDecider, ThreatResponseDatabaseService threatResponseDbService) {
 		List<SingleEmailAnalysisTask> allAnalysis = new ArrayList<>();
 
 		File[] allEmlFiles = inDirectory.listFiles(new FileFilter() {
@@ -184,7 +186,7 @@ public class AnalyzeCommand implements Callable<Integer> {
 		});
 
 		for (File emlFile : allEmlFiles) {
-			allAnalysis.add(new SingleEmailAnalysisTask(emlFile, outDirectory, phishingDecider));
+			allAnalysis.add(new SingleEmailAnalysisTask(emlFile, outDirectory, phishingDecider, threatResponseDbService));
 		}
 
 		return allAnalysis;

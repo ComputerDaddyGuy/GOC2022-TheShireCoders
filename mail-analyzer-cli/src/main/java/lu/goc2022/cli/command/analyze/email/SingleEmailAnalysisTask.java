@@ -24,13 +24,14 @@ public class SingleEmailAnalysisTask implements Callable<AnalysisResult> {
 	private final File emlFile;
 	private final File outDirectory;
 	private final IPhishingDeciderStrategy phishingDecider;
+	private final ThreatResponseDatabaseService threatResponseDatabaseService;
 
 	@Override
 	public AnalysisResult call() throws Exception {
 
 		Email emailToAnalyze = EmailConverter.emlToEmail(emlFile);
 
-		PhishingDecision phishingDecision = phishingDecider.isPhishing(emailToAnalyze);
+		PhishingDecision phishingDecision = phishingDecider.isPhishing(emlFile);
 		log.info("Decision for {}: {}", emlFile.getName(), phishingDecision);
 
 		if (phishingDecision == PhishingDecision.DELETE) {

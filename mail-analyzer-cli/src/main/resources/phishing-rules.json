@@ -187,6 +187,14 @@
 			}
 		},
 		{
+			"value": "L.YACKOVSKY@sawatzky.ru",
+			"score": {
+				"phishingCount": 1,
+				"totalCount": 1,
+				"score": 1.0
+			}
+		},
+		{
 			"value": "editor@members.wayfair.com",
 			"score": {
 				"phishingCount": 0,
