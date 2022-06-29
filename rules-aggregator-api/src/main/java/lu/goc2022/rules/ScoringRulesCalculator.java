@@ -17,8 +17,6 @@ public class ScoringRulesCalculator {
 			emailData.getHosts().forEach(host -> scoringRules.scoreReceivedHost(host, emailData.isPhishing()));
 		});
 
-		System.out.println("scoringRules: " + scoringRules);
-
 		return scoringRules;
 	}
 

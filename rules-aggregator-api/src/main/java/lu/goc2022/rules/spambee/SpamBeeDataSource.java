@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import lu.goc2022.rules.EmailPhishingData;
 import lu.goc2022.rules.IEmailDataSource;
 import lu.goc2022.rules.spambee.csv.SpamBeeAttributes;
@@ -13,6 +14,7 @@ import lu.goc2022.rules.spambee.csv.SpamBeeEvents;
 
 @Component
 @AllArgsConstructor
+@Slf4j
 public class SpamBeeDataSource implements IEmailDataSource {
 
 	private final ISpamBeeAttributesLoader spambeeAttributeLoader;
@@ -25,11 +27,12 @@ public class SpamBeeDataSource implements IEmailDataSource {
 		 * Real application will have to load SpamBee CSV regularly from remote location (API call, SFTP, etc.)
 		 */
 
-		System.out.println("1");
+		log.info("Reading SpamBee attributes...");
 		List<SpamBeeAttributes> attr202204 = spambeeAttributeLoader.loadSpamBeeAttributes();
-		System.out.println("2");
+		log.info("Reading SpamBee events...");
 		List<SpamBeeEvents> events202204 = spambeeEventsLoader.loadSpamBeeEvents();
 
+		log.info("Parsing email data...");
 		List<EmailPhishingData> emailDataList = attr202204.stream() //
 				.collect(Collectors.groupingBy(attr -> attr.getEventId())) // Map<String, List<SpamBeeAttributes>>
 				.entrySet().stream().map((entry) -> emailAttributesToData(events202204, entry.getKey(), entry.getValue())) //
@@ -39,7 +42,6 @@ public class SpamBeeDataSource implements IEmailDataSource {
 	}
 
 	private EmailPhishingData emailAttributesToData(List<SpamBeeEvents> events, String id, List<SpamBeeAttributes> attributes) {
-		System.out.println("3: " + id);
 		EmailPhishingData emailData = new EmailPhishingData();
 
 		emailData.setPhishing(isPhishing(events, id));
