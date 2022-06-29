@@ -1,0 +1,45 @@
+<div class="min-h-screen flex flex-column">
+  <div class="bg-indigo-500" style="height: 250px;">
+    <div class="py-3 px-5 flex align-items-center justify-content-between relative lg:static" style="min-height: 80px;">
+      <img id="logo" src="assets/images/poseidon_logo.png" alt="Image" height="100" class="mr-0 lg:mr-6">
+      <div
+        class="align-items-center flex-grow-1 justify-content-between lg:flex absolute lg:static w-full bg-indigo-500 left-0 top-100 z-1 hidden">
+        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
+          <li><a pripple="" routerLink="/dashboard"
+                 class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"><i
+            class="pi pi-home mr-2"></i><span>Dashboard</span><span class="p-ink"></span></a></li>
+          <li><a pripple="" pstyleclass="@next" enterclass="hidden" enteractiveclass="scalein" leavetoclass="hidden"
+                 leaveactiveclass="fadeout"
+                 class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"><i
+            class="pi pi-users mr-2"></i><span>Views</span><i class="pi pi-angle-down ml-auto lg:ml-3"></i><span
+            class="p-ink" style="height: 169px; width: 169px; top: -60.5px; left: 399.5px;"></span></a>
+          </li>
+        </ul>
+      <ul
+        class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-indigo-400 lg:border-top-none">
+        <li><a pripple=""
+               class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"><i
+          class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i><span
+          class="block lg:hidden font-medium">Inbox</span><span class="p-ink"></span></a></li>
+        <li><a pripple=""
+               class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"><i
+          class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0"></i><span class="block lg:hidden font-medium">Notifications</span><span
+          class="p-ink"></span></a></li>
+        <li class="border-top-1 border-indigo-400 lg:border-top-none"><a pripple=""
+                                                                         class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"><img
+          src="assets/images/avatar.PNG" class="mr-3 lg:mr-0"
+          style="width: 32px; height: 32px;">
+          <span class="p-ink"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <ul
+    class="list-none py-3 px-5 m-0 flex align-items-center font-medium overflow-x-auto border-top-1 border-indigo-600">
+  </ul>
+</div>
+<div class="p-5 flex flex-column flex-auto" style="margin-top: -8rem;">
+  <div class="border-2 surface-border surface-ground border-round flex-auto">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</div>

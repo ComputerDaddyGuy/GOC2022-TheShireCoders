@@ -1,0 +1,56 @@
+<p-table #dt1 [value]="detectionList" dataKey="id" [paginator]="true" [rows]="10" [showCurrentPageReport]="true" responsiveLayout="scroll"
+         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]"
+         [globalFilterFields]="['to','from','level','category', 'status', 'detectionDate']">
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 3rem"></th>
+      <th pSortableColumn="to">To <p-sortIcon field="to"></p-sortIcon></th>
+      <th pSortableColumn="from">From <p-sortIcon field="from"></p-sortIcon></th>
+      <th pSortableColumn="level">Level <p-sortIcon field="level"></p-sortIcon></th>
+      <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon></th>
+      <th pSortableColumn="status">Status <p-sortIcon field="status"></p-sortIcon></th>
+      <th pSortableColumn="detectionDate">Detection Date <p-sortIcon field="detectionDate"></p-sortIcon></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="caption">
+    <div class="flex">
+      <button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash" (click)="clear(dt1)"></button>
+      <span class="p-input-icon-left ml-auto">
+                    <i class="pi pi-search"></i>
+                    <input #srchInput pInputText type="text" class="p-inputtext p-component p-element" (input)="dt1.filterGlobal(srchInput.value, 'contains')" placeholder="Search keyword" />
+                </span>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="body" let-detectionData let-expanded="expanded">
+    <tr>
+      <td>
+        <button type="button" pButton pRipple [pRowToggler]="detectionData" class="p-button-text p-button-rounded p-button-plain" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></button>
+      </td>
+      <td>{{detectionData.to}}</td>
+      <td>{{detectionData.from}}</td>
+      <td><ngx-gauge [type]="'semi'"
+                     [value]="detectionData.level"
+                     [append]="'/10'"
+                     [min]="1"
+                     [max]="10"
+                     [size]="50"
+                     [thresholds]="thresholdConfig"
+      >
+      </ngx-gauge></td>
+      <td>{{detectionData.category}}</td>
+      <td><span [class]="'badge status-' + detectionData.status.toLowerCase()">{{detectionData.status}}</span></td>
+      <td>{{detectionData.detectionDate}}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="rowexpansion" let-detectionData>
+    <tr>
+      <td colspan="7">
+        <p-timeline [value]="events2" layout="horizontal" align="top">
+          <ng-template pTemplate="content" let-event>
+            {{event}}
+          </ng-template>
+        </p-timeline>
+      </td>
+    </tr>
+  </ng-template >
+</p-table>
