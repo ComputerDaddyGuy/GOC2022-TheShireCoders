@@ -38,7 +38,7 @@
       "level": "8",
       "category": "Finance",
       "status": "Treated",
-      "detectionDate": "2022-06-01 10:32"
+      "detectionDate": "2022-06-12 11:32"
     },
     {
       "id": "2",
@@ -47,7 +47,7 @@
       "level": "2",
       "category": "Finance",
       "status": "Canceled Manually",
-      "detectionDate": "2022-06-01 10:32"
+      "detectionDate": "2022-06-13 12:32"
     },
     {
       "id": "3",
@@ -55,8 +55,8 @@
       "from": "3@phis.com",
       "level": "10",
       "category": "Telecom",
-      "status": "Blocked",
-      "detectionDate": "2022-06-01 10:32"
+      "status": "Deleted",
+      "detectionDate": "2022-06-19 08:32"
     },
     {
       "id": "4",
@@ -64,8 +64,8 @@
       "from": "4@phis.com",
       "level": "6",
       "category": "Finance",
-      "status": "Treated",
-      "detectionDate": "2022-06-01 10:32"
+      "status": "Blocked",
+      "detectionDate": "2022-06-22 10:32"
     },
     {
       "id": "5",
@@ -73,8 +73,26 @@
       "from": "5@phis.com",
       "level": "4",
       "category": "Finance",
-      "status": "Deleted",
-      "detectionDate": "2022-06-01 10:32"
+      "status": "Treated",
+      "detectionDate": "2022-06-023 11:20"
+    },
+    {
+      "id": "6",
+      "to": "6@test.com",
+      "from": "6@yopmail.com",
+      "level": "4",
+      "category": "Finance",
+      "status": "Canceled Manually",
+      "detectionDate": "2022-06-26 09:12"
+    },
+    {
+      "id": "7",
+      "to": "7@test.com",
+      "from": "7@yopmail.com",
+      "level": "1",
+      "category": "Finance",
+      "status": "Treated",
+      "detectionDate": "2022-06-28 18:21"
     }
   ]
 }

@@ -22,7 +22,7 @@ export class StatsDetailComponent implements OnInit {
     });
 
     this.events2 = [
-      "2020", "2021", "2022", "2023"
+      "Receive email", "Rule id #829 detected on email #39876", "Block DNS on Corp. firewall", "Remove phishing link from email"
     ];
 
     this.thresholdConfig = {

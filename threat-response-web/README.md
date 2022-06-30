@@ -1,10 +1,16 @@
 # ThreatResponseWeb
 
+This project is a front end for Poseidon Solution to visualize in real time the content of the threat database 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Mock backend services
+
+Run `npm run mock` to mock backend services and use the web part individually (on localhost:3000)
 
 ## Code scaffolding
 
