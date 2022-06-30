@@ -15,6 +15,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;
 import lu.goc2022.cli.command.analyze.email.AnalysisResult;
@@ -26,14 +28,19 @@ import lu.goc2022.cli.command.analyze.rules.ScoreDto;
 import lu.goc2022.cli.command.analyze.rules.ScoringRuleDto;
 import lu.goc2022.cli.command.analyze.rules.ScoringRules;
 import lu.goc2022.cli.exceptions.MailAnalyzerException;
+import lu.goc2022.cli.orm.PhishingEventRepository;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 @Command(name = "analyze", helpCommand = true)
 @Slf4j
+@Component
 public class AnalyzeCommand implements Callable<Integer> {
 
 	private static final int MAX_THREAD_COUNT = 10;
+
+	@Autowired
+	private PhishingEventRepository phishingEventRepository;
 
 	@Option(names = { "-i", "--in" }, required = true, description = "Folder containing input EML files")
 	private File inDirectory;
@@ -68,7 +75,10 @@ public class AnalyzeCommand implements Callable<Integer> {
 		log.info("Executing all {} analysis tasks on {} thread(s)...", allAnalysisTasks.size(), threadCount);
 		List<Future<AnalysisResult>> allResultFuture = executeAllAnalysisTasks(allAnalysisTasks);
 
-		// TODO save results in database
+		/*
+		 *  TODO Out of scope of the Hackathon: save PhishingEvent results in database, table TBL_PHISHING_EVENTS,
+		 *  so it's automatically detected by threat-response-api on its next scheduled execution.
+		 */
 
 		return 0;
 	}
